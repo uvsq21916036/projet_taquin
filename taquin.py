@@ -79,6 +79,11 @@ def gen_sauv():
 
 def déplacement():
     'cette fonction va gérer les déplacement des cases sur le damier'
+    x = event.x
+    y = event.y
+    if :
+        canvas.move(rectangle)
+        canvas.move(nb)
     pass
 
 
