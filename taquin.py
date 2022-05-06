@@ -61,8 +61,21 @@ def sauvegarde():
 
 def gen_sauv():
     'cette fonction va nous permettre de récupérer une sauvegarde de la partie précédente'
+    fic = open('sauvegardedejeu.txt', 'r')
+    txt_s = fic.readlines()
+    
+    for i in range(4):
+        for j in range(4):
+            x = j*100
+            y = i*100
+            a = (x, y)
+            b = (x + 100, y + 100)
+            centre = (x + 50, y + 50)
+            rectangle = canvas.create_rectangle(a, b, fill="white")
+            nb = canvas.create_text(centre, text = txt_s, fill="black")
 
-    pass
+    canvas.delete(rectangle)
+    canvas.delete(nb)
 
 def déplacement():
     'cette fonction va gérer les déplacement des cases sur le damier'
