@@ -9,6 +9,7 @@
 #########################################
 
 ########## Fonctionnement du programme ###############
+
 étape 1 : lancer le programme
   On a une fenetre qui s'affiche avec un canevas vide et 4 boutons 'démarrer', 'retour', 'sauvegarde' et 'générée sauvegarde'.
   
