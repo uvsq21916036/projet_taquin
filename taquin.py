@@ -27,7 +27,7 @@ L = 400
 
 # avant "..."
 
-# grille = []
+grille_taquin = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
 
 
 ##############
@@ -36,9 +36,10 @@ L = 400
 def création_de_terrain():
     'cette fonction va nous permettre de générer un damier avec 16 cases numérotées dont celle en bas à droite est vide'
      #http://pascal.ortiz.free.fr/contents/tkinter/projets_tkinter/taquin/taquin.html
-    nb_taquin = [i for i in range(1, 17)]
-    rd.shuffle(nb_taquin)                                                     
-    grille = [[nb_taquin[4*m+n]for n in range(4)] for m in range(4)]
+   global grille_taquin
+
+    rd.shuffle(grille_taquin)                                                     
+    grille = grille_taquin 
     
     for i in range(4):
         for j in range(4):
